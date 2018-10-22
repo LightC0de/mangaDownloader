@@ -1,8 +1,22 @@
 # coding: utf-8
-import requests, re, os
-from bs4 import BeautifulSoup
-from lxml import html
-from pyfiglet import Figlet
+import re, os
+
+# Check libs
+try:
+  import requests
+  from bs4 import BeautifulSoup
+  from lxml import html
+  from pyfiglet import Figlet  
+except ModuleNotFoundError:
+  print('[INFO] Installing libraries\n')
+  os.system('pip install requests bs4 lxml pyfiglet')
+  import requests
+  from bs4 import BeautifulSoup
+  from lxml import html
+  from pyfiglet import Figlet
+except:
+  print('Oops! Unknown error. Try again...')
+
 
 headers = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',

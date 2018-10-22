@@ -12,7 +12,6 @@ The CLI program "Manga Downloader" downloads manga from http://readmanga.me and 
 
 1. Install or update your python to version 3 — https://www.python.org/downloads/
 2. Cloning the repository `git clone https://github.com/LightC0de/mangaDownloader`
-3. Install libraries `pip install requests bs4 lxml pyfiglet`
 
 ## Instruction
 
@@ -23,6 +22,7 @@ Your manga will be in the same place as the file "main.py".
 
 ## Versioning
 
+* 2018.10.22 v1.1 — Added check of libraries 
 * 2018.10.21 v1.0 — Project initialization 
 
 ## Author
